@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0
+        }
+        #avo{
+            margin-left: 0;
+            display : flex;
+            flex-direction: row;
+        }
+        #pai1{
+            margin-left: 0;
+            display : flex;
+            flex-direction: column;
+        }
+        #pai2{
+            margin-left: 0;
+            display : flex;
+            flex-direction: row;
+        }
+        #cordireita{
+            height: 713px;
+            width:  1186px;
+            background-color: rgb(236, 236, 236);
+        }
+        #coresquerda{
+            margin-left: 0;
+            height: 643px;
+            width:  350px;
+            background-color: white;
+        }
+        #corsuperioresquerda{
+            margin-left: 0;
+            height: 70px;
+            width:  350px;
+            background-image: linear-gradient(to right, #FA2865, #FA751C );
+            display : flex;
+            flex-direction: row;
+        }
+        h1 {
+            margin-top: 21px;
+            margin-left: 20px;
+            text-align: center;
+            font-family: arial,helvetica;
+            color: rgb(56, 56, 56);
+        }
+        #logodafluxo{
+            margin-top: 12px;
+            margin-left: 20px;
+            background-color:#c21f4d00;
+            height: 50px;
+            width: 195px;
+            display : flex;
+            flex-direction: row;
+            padding: 0px;
+            border:none;
+
+        }
+        #fluxologo{
+            margin-top: 3px;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+        #nomedafluxo {
+            margin-top: 17px;
+            margin-left: 20px;
+            text-align: center;
+            font-family: arial,helvetica;
+            color: #fff;
+            font-size: 13px;}
+
+        #escudointerface {
+            margin-top: 23px;
+            margin-left: 42px;
+            background-color:#9e163d00;
+            height: 25px;
+            width: 25px;
+            display : flex;
+            flex-direction: row;
+            padding: 0px;
+            border:none;
+            border-radius: 50%;
+        }
+        
+        #maletainterface {
+            margin-top: 23px;
+            margin-left: 21px;
+            background-color:#040c0200;
+            height: 25px;
+            width: 25px;
+            display : flex;
+            flex-direction: row;
+            padding: 0px;
+            border:none;
+            border-radius: 50%;
+        }
+        #degradeparteesquerda{
+            margin-left: 38%;
+            margin-top: 35%;
+            height: 150px;
+            width:  100px;
+            background-image: linear-gradient(to right, #FA2865, #FA751C );
+            display : flex;
+            flex-direction: row;
+            border:none;
+            border-radius: 5%;
+        }
+        #matchesemensagens{
+            display : flex;
+            flex-direction: row;
+        }
+        #botaomatches{
+            margin-top: px;
+            margin-left: -10px;
+            height: 45px;
+            width:  105px;
+            text-align: center;
+            font-family: arial,helvetica;
+            color: rgb(56, 56, 56);
+            font-size: 7px;
+            border:none;
+            background-color: rgb(255, 255, 255)
+        }
+        #botaomensagens{
+            margin-top: 0px;
+            margin-left: 0px;
+            height: 45px;
+            width:  105px;
+            text-align: center;
+            font-family: arial,helvetica;
+            color: rgb(56, 56, 56);
+            font-size: 7px;
+            border:none;
+            background-color: rgb(255, 255, 255);
+        }
+        #textomatch{
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        #textomensagem{
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        #textoopniao{
+            margin-top: 21px;
+            margin-left: 20px;
+            text-align: center;
+            font-family: arial,helvetica;
+            color: rgb(56, 56, 56);
+        }
+        h2 {
+            margin-top: 21px;
+            margin-left: 21px;
+            margin-right: 21px;
+            text-align: center;
+            font-family: arial,helvetica;
+            color: rgb(107, 107, 107);
+            font-size: 15px
+        }
+        #imagemusuario{
+            margin-top: 128px;
+            margin-left: 443px;
+            height: 420px;
+            width:  300px;
+            border-radius: 2%;
+        }
+        #botaovoltar{
+            position:absolute;
+            margin-left: 443px;
+            margin-top: 128px;
+        }
+        #botaox{
+            position:absolute;
+            margin-left: 0px;
+        }
+        #botaoestrela{
+            position:absolute;
+            margin-left: 0px;
+        }
+        #botaocoracao{
+            position:absolute;
+            margin-left: 0px;
+        }
+        #botaorelampago{
+            position:absolute;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "avo">
+        <div id = "pai1">
+            <div id = "corsuperioresquerda">
+                <button id = "logodafluxo">
+                    <img id = "fluxologo" src = "logo333.png" alt>
+                    <h2 id = "nomedafluxo"> Fluxo Consultoria </h2>
+                </button>
+                <button id = "escudointerface">
+                    <img id = "escudo" src = "shield.svg" alt>
+                </button>
+                <button id = "maletainterface">
+                    <img id = "maleta" src = "handbag.svg" alt>
+                </button>
+            </div>
+            <div id = "coresquerda">
+                <div id=matchesemensagens>
+                    <button id = "botaomatches"><h1 id= "textomatch">Matches</h1></button>
+                    <button id = "botaomensagens"><h1 id = "textomensagem">Mensagens</h1></button>
+                </div>
+                <button id = "degradeparteesquerda"></button>
+                <h1> O que está achando do PAME?</h1>
+                <h2>Eu estou gostando muito do PAME, pois estou aprendendo muitas coisas novas que auxliam no aumento de minhas habilidades técnicas e pessoais.</h2>
+            </div>
+        </div>
+        <div id = "pai2">
+            <div id = "cordireita">
+                <div id= infousuario>
+                    <img id=imagemusuario src = "WhatsApp Image 2022-01-11 at 13.42.41.jpeg" alt>
+                    <button id = "botaovoltar">
+                        <img id = "return" src = "return.svg" alt>
+                    </button>
+                    <button id = "botaox">
+                        <img id = "ex" src = "x.svg" alt>
+                    </button>
+                    <button id = "botaoestrela">
+                        <img id = "estrela" src = "star.svg" alt>
+                    </button>
+                    <button id = "botaocoracao">
+                        <img id = "coração" src = "heart.svg" alt>
+                    </button>
+                    <button id = "botaorelampago">
+                        <img id = "relampago" src = "lightning.svg" alt>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
